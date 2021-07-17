@@ -4,7 +4,7 @@ import { PrimaryButton } from "../ui";
 
 const PackageCard = (props) => {
   return (
-    <div className="p-4 shadow-md">
+    <div className="p-4 shadow-md xl:w-72">
       <img src={props.src} alt="" />
       <h1 className="text-center font-bold text-xl mb-3 text-primary">
         {props.name}
@@ -26,23 +26,29 @@ const PackageCard = (props) => {
 
 function Package() {
   return (
-    <div className="px-4 pt-16">
+    <div className="px-4 pt-16 max-w-screen-xl mx-auto">
       <h1 style={{ color: "#231075" }} className="text-2xl mb-6 font-bold">
         Spritely Start-Up Packs
       </h1>
-      <Divider />
+      <Divider className="mb-10" />
       <h1 style={{ color: "#231075" }} className="text-xl font-bold">
         Our Start Up Packs
       </h1>
-      <p>
-        Let’s take your vision and turn it into reality. In just a few weeks
-        we’ll take your Web or Mobile App idea and bring it to life by creating
-        an app design prototype, brand kit, marketing website, pitch deck, and
-        marketing video. You can customize exactly what you want so you can
-        start your fundraising journey.
-      </p>
-      <PrimaryButton title="Learn More" />
-      <div className="grid gap-y-4">
+      <div
+        className="xl:flex flex-row-reverse justify-between items-center mt-10
+      "
+      >
+        <div className="xl:w-72 ">
+          <p className="mb-5">
+            Let’s take your vision and turn it into reality. In just a few weeks
+            we’ll take your Web or Mobile App idea and bring it to life by
+            creating an app design prototype, brand kit, marketing website,
+            pitch deck, and marketing video. You can customize exactly what you
+            want so you can start your fundraising journey.
+          </p>
+          <PrimaryButton title="Learn More" />
+        </div>
+
         <PackageCard
           name="Classic Pack"
           src="images/Spritely-Startup-Pack-Classic-Pack.jpg"

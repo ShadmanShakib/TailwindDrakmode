@@ -24,10 +24,12 @@ const Card = (props) => {
 
 function Team() {
   return (
-    <div className="px-4 ">
+    <div className="px-4 xl:max-w-screen-xl mx-auto ">
       <h1 className="text-2xl text-primary mb-6 mt-8 font-bold">Our Team</h1>
       <Divider />
-      <div className="grid mt-10 gap-y-4">
+      <div className="grid mt-10 gap-y-4 xl:grid-cols-4 xl:gap-10">
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />

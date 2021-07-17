@@ -20,21 +20,21 @@ const Card = (props) => {
 
 function Review() {
   return (
-    <div className="px-4 pt-16">
+    <div className="px-4 pt-16 max-w-screen-xl mx-auto">
       <div className="flex flex-col items-center">
         <h1 style={{ color: "#231075" }} className="text-2xl mb-6 font-bold">
           Our customers love our work
         </h1>
 
-        <Divider />
+        <Divider className="mb-6" />
       </div>
 
-      <p>
+      <p className="text-center">
         With over 34 years of industry experience focusing on Web and Mobile
         design and development, we leverage this experience to deliver
         World-Class digital products for our happy customers.
       </p>
-      <div className="grid gap-y-4">
+      <div className="grid gap-y-4 xl:grid-cols-3 xl:gap-10 xl:mt-10">
         <Card
           title="Professional and Knowlegable"
           description="The team at Spritely have been amazing to work with. They are professional and knowledgeable. They run an amazing process to develop and validate an idea using the expertise of a variety of professionals. "

@@ -4,7 +4,7 @@ function PrimaryButton(props) {
   return (
     <button
       style={{ color: "#230677", backgroundColor: "#08ffa2" }}
-      className="rounded-lg font-semibold w-40 h-11 "
+      className="rounded-lg font-semibold shadow-md w-40 h-11 "
     >
       {props.title}
     </button>
