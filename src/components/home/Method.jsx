@@ -61,7 +61,7 @@ function Method() {
             />
           </div>
         </div>
-        <div className="text-center bg-gray-100 py-3">
+        <div className="text-center bg-gray-100 py-3 xl:py-10">
           <h1 className="text-primary font-bold mb-3 text-2xl text-center">
             Let's build your vision
           </h1>

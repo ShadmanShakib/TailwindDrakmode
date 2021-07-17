@@ -4,14 +4,14 @@ import { PrimaryButton } from "../ui";
 function Hero() {
   return (
     <>
-      <div style={{ backgroundColor: "#061437" }} className="">
+      <div style={{ backgroundColor: "#061437" }} className="relative">
         <div
           style={{ backgroundColor: "#061437" }}
           className="px-4 max-w-screen-xl mx-auto pt-20 pb-24  xl:flex flex-row-reverse "
         >
           <img className="xl:h-96" src="Heading-1.jpg" alt="" />
           {/* Left Side */}
-          <div className="pt-20 max-w-screen-md">
+          <div className="pt-20 ">
             <h1 className="text-white text-3xl xl:text-5xl font-extrabold">
               Mobile App Development for Startups &amp; Businesses
             </h1>

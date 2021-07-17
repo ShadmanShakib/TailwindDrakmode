@@ -1,21 +1,25 @@
 import React from "react";
-import { Divider } from "../icons";
+import { Divider, Liinkedin, Github } from "../icons";
 
 const Card = (props) => {
   return (
-    <div className="bg-gray-100 p-6 shadow-md">
+    <div className="bg-white p-6 shadow-md hover:shadow-lg">
       <img
-        className="h-20 w-20 mb-5 shadow-md rounded-full"
+        className="h-20 w-20 mb-2 shadow-md rounded-full"
         src="ElonMusk.jpg"
         alt="Elon Musk"
       />
-      <h1 className="font-bold ">Elon Musk</h1>
+      <div className="mb-3 flex">
+        <Github className="h-6 w-6 rounded-full" />
+        <Liinkedin className="h-6 w-6  ml-3" />
+      </div>
+      <h1 className="font-bold text-primary ">Elon Musk</h1>
       <p className="text-sm text-gray-700 mb-4">Starbase,Taxas</p>
-      <a className="  text-primary" href="tel:+9494884848">
+      <a className="  text-green-300" href="tel:+9494884848">
         +3838838383
       </a>
       <br />
-      <a className="text-primary" href="mailto:elonmusk@gmail.com">
+      <a className="text-green-300" href="mailto:elonmusk@gmail.com">
         ElonMuskA@gmail.com
       </a>
     </div>
