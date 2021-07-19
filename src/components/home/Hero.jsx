@@ -1,15 +1,14 @@
 import React from "react";
 import { Divider } from "../icons";
 import { PrimaryButton } from "../ui";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <>
-      <div style={{ backgroundColor: "#061437" }} className="relative">
-        <div
-          style={{ backgroundColor: "#061437" }}
-          className="px-4 max-w-screen-xl mx-auto pt-20 pb-24  xl:flex flex-row-reverse "
-        >
+      <div className="relative bg-primarybg dark:bg-gray-900">
+        <div className="px-4 bg-primarybg dark:bg-gray-900 max-w-screen-xl mx-auto pt-20 pb-24  xl:flex flex-row-reverse ">
           <img className="xl:h-96" src="Heading-1.jpg" alt="" />
+
           {/* Left Side */}
           <div className="pt-20 ">
             <h1 className="text-white text-3xl xl:text-5xl font-extrabold">
@@ -22,13 +21,14 @@ function Hero() {
               with the quickest and most cost-effective path to market success
               and business growth.
             </p>
-            <PrimaryButton title="Get In Touch" />
+            <Link to="/get-in-touch">
+              <PrimaryButton title="Get In Touch" />
+            </Link>
           </div>
         </div>
-        <div
-          style={{ backgroundColor: "#213058" }}
-          className=" pt-5 xl:pt-10 xl:pb-6"
-        >
+
+        {/* Clients logo */}
+        <div className=" pt-5 xl:pt-10 xl:pb-6 bg-clientbg dark:bg-gray-900">
           <div className="flex flex-col items-center">
             <h1 className="text-white text-center text-2xl font-extrabold">
               We've Worked with.

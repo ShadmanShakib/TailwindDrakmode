@@ -6,13 +6,16 @@ const PackageCard = (props) => {
   return (
     <div className="p-4 shadow-md xl:w-72">
       <img src={props.src} alt="" />
-      <h1 className="text-center font-bold text-xl mb-3 text-primary">
+      <h1 className="text-center dark:text-white mt-4 xl:text-2xl font-bold text-xl mb-3 text-primary">
         {props.name}
       </h1>
       {props.features &&
         props.features.map((feature, inx) => {
           return (
-            <h1 className="text-center text-gray-700 text-sm" key={inx}>
+            <h1
+              className="text-center dark:text-gray-300 text-gray-700 text-sm"
+              key={inx}
+            >
               {feature}
             </h1>
           );
@@ -27,11 +30,11 @@ const PackageCard = (props) => {
 function Package() {
   return (
     <div className="px-4 pt-16 max-w-screen-xl mx-auto">
-      <h1 style={{ color: "#231075" }} className="text-2xl mb-6 font-bold">
+      <h1 className="text-2xl mb-6 text-primary dark:text-white xl:text-4xl font-bold">
         Spritely Start-Up Packs
       </h1>
       <Divider className="mb-10" />
-      <h1 style={{ color: "#231075" }} className="text-xl font-bold">
+      <h1 className="text-xl text-primary dark:text-white  font-bold">
         Our Start Up Packs
       </h1>
       <div
@@ -39,7 +42,7 @@ function Package() {
       "
       >
         <div className="xl:w-72 ">
-          <p className="mb-5">
+          <p className="mb-5 dark:text-gray-300">
             Let’s take your vision and turn it into reality. In just a few weeks
             we’ll take your Web or Mobile App idea and bring it to life by
             creating an app design prototype, brand kit, marketing website,

@@ -4,7 +4,7 @@ import { Divider } from "../icons";
 function Ourwork() {
   return (
     <div className="px-4 pt-16 max-w-screen-xl mx-auto">
-      <h1 style={{ color: "#231075" }} className="text-2xl mb-6 font-bold">
+      <h1 className="text-2xl xl:text-4xl dark:text-white mb-6 font-bold">
         Our Work
       </h1>
       <Divider className="mb-8" />

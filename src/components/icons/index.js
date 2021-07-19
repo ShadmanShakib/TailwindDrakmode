@@ -4,3 +4,5 @@ export { ReactComponent as Mail } from "./mail.svg";
 export { ReactComponent as Menu } from "./menu.svg";
 export { ReactComponent as Github } from "./github-sign.svg";
 export { ReactComponent as Liinkedin } from "./linkedin.svg";
+export { ReactComponent as Dark } from "./dark.svg";
+export { ReactComponent as Light } from "./light.svg";

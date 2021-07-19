@@ -4,13 +4,15 @@ import { PrimaryButton } from "../ui";
 
 const Card = (props) => {
   return (
-    <div className="p-4 shadow-md">
-      <h1 className="text-xl font-extrabold mb-2" style={{ color: "#231075" }}>
+    <div className="p-4 shadow-md ">
+      <h1 className="text-xl font-extrabold mb-2 text-primary dark:text-white">
         {props.title}
       </h1>
       <img className="h-6 mb-3" src="images/Starss.jpg" alt="" />
-      <p className="text-sm text-gray-800">{props.description}</p>
-      <h1 className="mt-2">
+      <p className="text-sm text-gray-800 dark:text-gray-300">
+        {props.description}
+      </p>
+      <h1 className="mt-2 dark:text-gray-300">
         <b>{props.name}-</b>
         {props.post}
       </h1>
@@ -22,14 +24,14 @@ function Review() {
   return (
     <div className="px-4 pt-16 max-w-screen-xl mx-auto">
       <div className="flex flex-col items-center">
-        <h1 style={{ color: "#231075" }} className="text-2xl mb-6 font-bold">
+        <h1 className="text-2xl text-primary xl:text-4xl dark:text-white mb-6 font-bold">
           Our customers love our work
         </h1>
 
         <Divider className="mb-6" />
       </div>
 
-      <p className="text-center">
+      <p className="text-center dark:text-gray-300">
         With over 34 years of industry experience focusing on Web and Mobile
         design and development, we leverage this experience to deliver
         World-Class digital products for our happy customers.
@@ -48,7 +50,7 @@ function Review() {
           post="Literacy Planet"
         />
         <Card
-          title="Experts in their field"
+          title="Experts in their field and professional"
           description="The team at Spritely have been amazing to work with. They are professional and knowledgeable. They run an amazing process to develop and validate an idea using the expertise of a variety of professionals. "
           name="Bridget Bartolo  "
           post="ACTV Online"
