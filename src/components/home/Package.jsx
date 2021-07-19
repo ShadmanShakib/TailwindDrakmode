@@ -4,18 +4,15 @@ import { PrimaryButton } from "../ui";
 
 const PackageCard = (props) => {
   return (
-    <div className="p-4 shadow-md xl:w-72">
+    <div className="p-4 h-96 rounded shadow-md xl:w-72 dark:bg-white">
       <img src={props.src} alt="" />
-      <h1 className="text-center dark:text-white mt-4 xl:text-2xl font-bold text-xl mb-3 text-primary">
+      <h1 className="text-center  mt-4 xl:text-2xl font-bold text-xl mb-3 text-primary">
         {props.name}
       </h1>
       {props.features &&
         props.features.map((feature, inx) => {
           return (
-            <h1
-              className="text-center dark:text-gray-300 text-gray-700 text-sm"
-              key={inx}
-            >
+            <h1 className="text-center  text-gray-700 text-sm" key={inx}>
               {feature}
             </h1>
           );

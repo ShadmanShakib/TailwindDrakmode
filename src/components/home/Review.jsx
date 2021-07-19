@@ -4,15 +4,13 @@ import { PrimaryButton } from "../ui";
 
 const Card = (props) => {
   return (
-    <div className="p-4 shadow-md ">
-      <h1 className="text-xl font-extrabold mb-2 text-primary dark:text-white">
+    <div className="p-4 shadow-md rounded  dark:bg-white">
+      <h1 className="text-xl font-extrabold mb-2 text-primary ">
         {props.title}
       </h1>
       <img className="h-6 mb-3" src="images/Starss.jpg" alt="" />
-      <p className="text-sm text-gray-800 dark:text-gray-300">
-        {props.description}
-      </p>
-      <h1 className="mt-2 dark:text-gray-300">
+      <p className="text-sm text-gray-700 ">{props.description}</p>
+      <h1 className="mt-2 text-gray-900">
         <b>{props.name}-</b>
         {props.post}
       </h1>

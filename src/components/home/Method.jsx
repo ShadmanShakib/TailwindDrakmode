@@ -4,14 +4,12 @@ import { PrimaryButton } from "../ui";
 
 const Card = (props) => {
   return (
-    <div className="">
+    <div className="dark:bg-white p-4 xl:rounded">
       <img className="mb-5" src={props.src} alt="" />
-      <h1 className="text-primary dark:text-white xl:text-2xl font-bold text-xl mb-3">
+      <h1 className="text-primary  xl:text-2xl font-bold text-xl mb-3">
         {props.title}
       </h1>
-      <p className="text-sm text-gray-700 dark:text-gray-300">
-        {props.description}
-      </p>
+      <p className="text-sm text-gray-700 ">{props.description}</p>
     </div>
   );
 };
