@@ -21,7 +21,7 @@ function Hero() {
               with the quickest and most cost-effective path to market success
               and business growth.
             </p>
-            <Link to="/get-in-touch">
+            <Link className="animate-pulse" to="/get-in-touch">
               <PrimaryButton title="Get In Touch" />
             </Link>
           </div>

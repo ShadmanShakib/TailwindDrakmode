@@ -57,7 +57,9 @@ function Review() {
         />
       </div>
       <div className="flex justify-center mt-8">
-        <PrimaryButton title="Contact Us" />
+        <a href="mailto:weiqili1212@outlook.com">
+          <PrimaryButton title="Contact Us" />
+        </a>
       </div>
     </div>
   );

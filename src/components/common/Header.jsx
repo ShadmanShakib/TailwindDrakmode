@@ -75,7 +75,7 @@ function Header() {
           </div>
           <div className="hidden xl:block ">
             <Link to="/get-in-touch">
-              <button className="text-green-300 transition duration-100 hover:text-white hover:border-white dark:text-white border-2 py-2 px-4 border-green-300 rounded-md">
+              <button className="text-green-300 animate-pulse transition duration-100 hover:text-white hover:border-white dark:text-white border-2 py-2 px-4 border-green-300 rounded-md">
                 Get In Touch
               </button>
             </Link>
