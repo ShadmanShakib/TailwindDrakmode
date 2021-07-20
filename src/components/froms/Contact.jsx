@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { PrimaryButton } from "../ui";
+import emailjs from "emailjs-com";
 function Contact() {
   const {
     register,
@@ -8,7 +9,27 @@ function Contact() {
 
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  React.useEffect(() => emailjs.init("user_KAIdTNgGv1QLAq1gXijUW"), []);
+  const onSubmit = (data) => {
+    emailjs
+      .send(
+        "service_fcry95k",
+        "template_eubkzcj",
+        data,
+        "user_KAIdTNgGv1QLAq1gXijUW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Your Message is sent");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Something went wrong");
+        }
+      );
+  };
   return (
     <div className="py-20 dark:bg-gray-900  ">
       <div className=" py-10">
