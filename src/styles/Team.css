@@ -1,0 +1,26 @@
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background: -webkit-linear-gradient(-70deg, #9867f0, #ed4e50);
+  overflow-y: hidden;
+  transition: 0.8s ease;
+  width: 100%;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+.icon {
+  visibility: hidden;
+}
+
+.card:hover .icon {
+  visibility: visible;
+}
