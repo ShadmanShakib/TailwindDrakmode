@@ -1,7 +1,7 @@
 import React from "react";
 export default function useDarkMode() {
   const [currentMode, setCurrentMode] = React.useState("light");
-  //currentMode is opposite to mode
+  //mode is opposite to currentMode
   const mode = currentMode === "light" ? "dark" : "light";
   React.useEffect(() => {
     const root = window.document.documentElement;
