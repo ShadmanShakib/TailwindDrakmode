@@ -1,11 +1,12 @@
 import React from "react";
 export default function useDarkMode() {
-  const [theme, setTheme] = React.useState("light");
-  const colorTheme = theme === "light" ? "dark" : "light";
+  const [currentMode, setCurrentMode] = React.useState("light");
+  //currentMode is opposite to mode
+  const mode = currentMode === "light" ? "dark" : "light";
   React.useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove(colorTheme);
-    root.classList.add(theme);
-  }, [theme, colorTheme]);
-  return [colorTheme, setTheme];
+    root.classList.remove(mode);
+    root.classList.add(currentMode);
+  }, [mode, currentMode]);
+  return [mode, setCurrentMode];
 }

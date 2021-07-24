@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function Header() {
   const menuState = useSelector((state) => state.layout.menu);
   const dispatch = useDispatch();
-  const [colorTheme, setTheme] = useDarkMode();
+  const [mode, setCurrentMode] = useDarkMode();
   return (
     <div className="h-16 fixed w-full z-10  bg-primarybg dark:bg-gray-800   px-4">
       <div className="xl:flex xl:justify-between items-center max-w-screen-xl mx-auto ">
@@ -48,10 +48,10 @@ function Header() {
           </div>
           <div className="flex xl:hidden items-center ">
             <div
-              onClick={() => setTheme(colorTheme)}
+              onClick={() => setCurrentMode(mode)}
               className="pr-2 cursor-pointer"
             >
-              {colorTheme === "dark" ? (
+              {mode === "dark" ? (
                 <Dark className="h-4 w-4 fill-current  text-white" />
               ) : (
                 <Light className="h-5 w-4 fill-current  text-white" />
@@ -64,10 +64,11 @@ function Header() {
 
         <div className="xl:flex hidden items-center ">
           <div
-            onClick={() => setTheme(colorTheme)}
+            onClick={() => setCurrentMode(mode)}
             className="mr-5 cursor-pointer"
           >
-            {colorTheme === "dark" ? (
+            {/*  */}
+            {mode === "dark" ? (
               <Dark className="h-6 w-6 fill-current  text-white" />
             ) : (
               <Light className="h-6 w-6 fill-current  text-white" />
